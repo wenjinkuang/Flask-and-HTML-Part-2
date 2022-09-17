@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="eng"> 
+    <head>
+        <title> About </title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+         <!-- make sure the naming of the .css file you want to load is correct! -->
+        <link rel="stylesheet" href="{{ url_for('static', filename='bootstrap.css') }}">
+    </head>
+    
+    <body>
+        <center>
+            <h1>
+                These are the major ghosts that haunts the family 
+            </h1>
+            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="https://c.tenor.com/SgPxz0AghkYAAAAC/bent-neck-lady-screaming.gif" class="d-block w-100" style="width:100%" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="https://www.motionpictures.org/wp-content/uploads/2018/10/MV5BNTAxMmVlNWEtNTMxMS00MDE2LTgwYTYtYzM2YjdhNmViNjVlXkEyXkFqcGdeQXVyNjQ4ODE4MzQ@._V1_.jpg" class="d-block w-100" style="width: 100%" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="https://i.pinimg.com/originals/22/de/49/22de493bd9e3f3017e2b70d4d39656a2.gif" class="d-block w-100" style="width: 100%" alt="...">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+            <button type="button" class="btn btn-warning" style="text-align: center;"><a href="{{ url_for('home') }}">
+             This button does nothing press if don't believe</a></button>
+        </center> 
+    </body>
+</html>

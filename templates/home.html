@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="eng"> 
+    <head>
+        <title> Home Page </title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+         <!-- make sure the naming of the .css file you want to load is correct! -->
+        <link rel="stylesheet" href="{{ url_for('static', filename='bootstrap.css') }}">
+    </head>
+    
+    <body>
+        <center>
+            <h1>
+                Show Currently Rewatching
+            </h1>
+                <p1>
+                    Its called Haunting of Hill house
+                </p1>
+            <div class="card" style="width: 18rem;">
+                <img src="https://flxt.tmsimg.com/assets/p15880871_b_h10_ab.jpg" class="card-img-top" style="width:100%"
+                <div class="card-body">
+                  <h5 class="card-title">Watchable on Netflix</h5>
+                  <p class="card-text">Its about a show where a family is still traumatized about past events.</p>
+                  <button type="button" class="btn btn-warning"><a href="{{ url_for('about') }}">
+                    Learn more here</a></button> 
+                </div>
+            </div>
+        </center> 
+    </body>
+</html>
